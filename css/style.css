@@ -195,7 +195,12 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(128,128,128,1) 
 
 .btn-class-name:active .front {
   transform: translateY(0%);
-  box-shadow: 0 0;
+  box-shadow: 0 0; 
+}
+
+.btn-class-name:focus:not(:focus-visible)
+{  
+  outline: 10px solid rgb(var(--primary), .5);
 }
 
 .explore {
